@@ -9,19 +9,14 @@ import org.openqa.selenium.support.PageFactory;
 public class ContactUsPage {
     private WebDriver driver;
 
-
     @FindBy(how = How.ID, using = "submitMessage")
     public WebElement submitButtonContactUs;
 
     @FindBy(how = How.CLASS_NAME, using = "alert-danger")
     public WebElement alertPopUp;
 
-
-
-
     public ContactUsPage(final WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
 }

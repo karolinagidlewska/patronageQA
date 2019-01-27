@@ -4,4 +4,4 @@ Feature: As a user i want to have possibility to contact Shop
     Given I open automationpractice website
     When I click on ContactUS link
     And I click on Send button
-    Then I will see error popup
+    Then I see error popup
