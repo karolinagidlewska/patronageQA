@@ -14,7 +14,6 @@ public class ContactUsSteps extends DriverFactory {
     MainPage mainPage = new MainPage(driver);
     ContactUsPage contactUsPage = new ContactUsPage(driver);
 
-
     @Given("^I open automationpractice website$")
     public void iOpenAutomationpracticeWebsite() {
         mainPage.openAutomationPracticePage();
@@ -22,7 +21,6 @@ public class ContactUsSteps extends DriverFactory {
 
     @When("^I click on ContactUS link$")
     public void iClickOnContactUSLink() {
-
         mainPage.contactUsLink.isDisplayed();
         mainPage.contactUsLink.click();
     }
@@ -31,7 +29,6 @@ public class ContactUsSteps extends DriverFactory {
     public void iClickOnSendButton() {
         contactUsPage.submitButtonContactUs.isDisplayed();
         contactUsPage.submitButtonContactUs.click();
-
     }
 
     @Then("^I see error popup$")

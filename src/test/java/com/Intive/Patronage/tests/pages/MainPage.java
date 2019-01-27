@@ -17,6 +17,9 @@ public class MainPage {
     @FindBy(how = How.ID, using = "contact-link")
     public WebElement contactUsLink;
 
+    @FindBy(how = How.CLASS_NAME, using = "header_user_info")
+    public WebElement signInLink;
+
     public MainPage(final WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
