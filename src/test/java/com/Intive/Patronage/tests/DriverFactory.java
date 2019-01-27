@@ -1,8 +1,9 @@
 package com.Intive.Patronage.tests;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.util.concurrent.TimeUnit;
 
 
 
@@ -12,7 +13,13 @@ public class DriverFactory {
     private static final int SCRIPT_TIMEOUT = 5;
     protected static WebDriver driver;
 
+    static{
+        System.setProperty("webdriver.chrome.driver", "C:\\PATRONAGE_QA\\chromedriver.exe");
+    }
+
     public static void startBrowser() {
+
+
         if (driver == null) {
             switch (getBrowser().toLowerCase()) {
                 case "firefox":
