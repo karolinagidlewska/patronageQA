@@ -20,6 +20,9 @@ public class MainPage {
     @FindBy(how = How.CLASS_NAME, using = "header_user_info")
     public WebElement signInLink;
 
+    @FindBy(how = How.ID, using = "search_query_top")
+    public WebElement searchBox;
+
     public MainPage(final WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
